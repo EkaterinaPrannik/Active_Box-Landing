@@ -1,0 +1,115 @@
+.footer {
+    &-main{
+        padding: 7.2rem 0;
+        background: #353C65;
+        @media (max-width:1024px){
+            padding: 4.8rem 0;
+        }
+        &-wrapper{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 37rem);
+            grid-gap: 3rem;
+            justify-content: center;
+            align-items: center;
+            margin: 0 -1.5rem;
+            @media (max-width:1024px){
+                grid-template-columns: repeat(auto-fit, 31.4rem);
+                grid-column-gap: 2rem;
+            }
+            @media (max-width:768px){
+                grid-template-columns: repeat(auto-fit, 23rem);
+                grid-column-gap: 1.5rem;
+
+            }
+            @media (max-width:425px){
+                margin: 0;
+                grid-template-columns: repeat(auto-fit, 28rem)
+            }
+        }
+        &-location-wrapper{
+            text-align: center;
+            @media (max-width:425px){
+                margin-bottom: 7rem;  
+            }
+        }
+        &-location-title{
+            @include title_h5;
+            margin-bottom: 3rem;
+            @media (max-width:1024px){
+                @include title_h5Tablet;
+                margin-bottom: 2.5rem;
+            }
+        }
+        &-location-text{
+            @include footerText;
+            @media (max-width:1024px){
+                @include footerTextTablet;
+            }
+        }
+        &-share-wrapper{
+            text-align: center;
+            @media (max-width:425px){
+                margin-bottom: 7rem;  
+            }
+        }
+        &-share-title{
+            @include title_h5;
+            margin-bottom: 4.8rem;
+            @media (max-width:1024px){
+                @include title_h5Tablet;
+                margin-bottom: 3.4rem;
+            }
+        }
+        &-share-social-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        &-share-social-img-wrapper{
+            @include socialWrapper;
+            margin: 0 1rem;
+            i{
+                font-size: 2rem;
+                color:#C6CBCD;
+            }
+        }
+        &-about-wrapper{
+            text-align: center;
+        }
+        &-about-title{
+            @include title_h5;
+            margin-bottom: 3rem;
+            @media (max-width:1024px){
+                @include title_h5Tablet;
+                margin-bottom: 2.4rem;
+            }
+        }
+        &-about-text{
+            text-align: center;
+            p{
+                @include footerText;
+                @media (max-width:1024px){
+                    @include footerTextTablet;
+                }
+            }
+        }
+    }
+    &-bottom{
+        background: #2C3154;
+        padding: 2.4rem 0;
+        text-align: center;
+        &-text {
+            max-width: 37rem;
+            margin: 0 auto;
+        p{
+            @include footerText;
+            color: #808080;
+            @media (max-width:1024px){
+                @include footerTextTablet;
+            }
+        }
+        span{
+            color: $lightColorText;
+        }
+    }
+    }
+}

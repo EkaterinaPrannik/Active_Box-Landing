@@ -1,0 +1,80 @@
+@mixin title{
+    color: $lightColorText;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+@mixin title_h4{
+    color: $darkColorTitle;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+@mixin title_h4_Tablet{
+    font-size: 1.8rem;
+}
+@mixin title_h3{
+    color: $darkColorTitle;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+@mixin title_h3_Tablet{
+    font-size: 1.8rem;
+}
+@mixin title_h5{
+    color: $lightColorText;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+@mixin title_h5Tablet{
+    font-size: 1.4rem;
+}
+@mixin text {
+    color: $darkColorText;
+    font-size: 1.8rem;
+}
+@mixin textTablet {
+    font-size: 1.4rem;
+}
+@mixin footerText{
+    color: $lightColorText;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+@mixin footerTextTablet{
+    font-size: 1.4rem;
+}
+@mixin button {
+    color: $lightColorText;
+    display: inline-block;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: $buttonBackgroudColor;
+    min-width: 37rem;
+    padding: 2rem 0;
+}
+@mixin buttonActive{
+    background: $buttonActiveBackgroundColor;
+    box-shadow: 4px 4px 30px 0px $buttonActiveBackgroundColor;
+
+}
+@mixin buttonTablet{
+    min-width: 32rem;
+    padding: 2rem 0;
+}
+@mixin socialWrapper{
+    width: 3.9rem;
+    height: 3.9rem;
+    border: 0.1rem solid #C6CBCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin socialWrapperTablet{
+    width: 3.2rem;
+    height: 3.2rem;
+}
